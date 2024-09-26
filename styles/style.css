@@ -24,7 +24,7 @@ div {
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  display: flex;
+  display: flex; /* центрирование header__title */
   flex-direction: column;
   justify-content: center;
   position: relative;
@@ -33,7 +33,7 @@ div {
 .logo__place_header {
   height: 32px;
   width: 228px;
-  position: absolute;
+  position: absolute; /* абсолютное позиционирование относительно header */
   left: 64px;
   top: 30px;
   z-index: 1;
@@ -57,9 +57,11 @@ div {
   font-size: 18px;
   font-weight: normal;
   z-index: 1;
+  display: inline;
 }
 
 .header__link {
+  display: inline;
   z-index: 1;
 }
 
@@ -94,35 +96,52 @@ div {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* центрирование основного блока по вертикали */
   justify-content: center;
+  align-items: center;
   margin: 100px 0 100px;
 }
 
-.two-columns {
+.two-columns { /* основной блок */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 80%;
-  align-self: center;
 }
 
-.two-columns__brief {
+.two-columns__brief { /* левая колонка */
   width: 175px;
   align-self: flex-start;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
 }
 
-.two-columns__main-text {
+.two-columns__main-text { /* правая колонка */
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 80%;
   min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .two-columns__paragraph {
   margin-bottom: 30px;
+  display: inline;
+  align-self: stretch;
 }
 
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  display: inline;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
