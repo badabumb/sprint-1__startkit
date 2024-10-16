@@ -1,0 +1,8 @@
+.logo__place_header {
+    height: 32px;
+    width: 228px;
+    position: absolute; /* абсолютное позиционирование относительно header */
+    left: 64px;
+    top: 30px;
+    z-index: 2;
+  }

@@ -1,0 +1,9 @@
+.two-columns { /* основной блок */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: stretch;
+  }

@@ -1,0 +1,10 @@
+.two-columns__paragraph {
+    margin-bottom: 30px;
+    display: inline;
+    align-self: stretch;
+    border-width: 10px;
+  }
+  
+.two-columns__paragraph:last-child {
+    margin-bottom: 0;
+  }
