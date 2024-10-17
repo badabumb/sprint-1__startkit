@@ -1,8 +1,9 @@
-.digits {
-    margin: 0;
-    padding: 0;
+.video {
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-  }
+    overflow: visible;
+    height: 440px;
+}
